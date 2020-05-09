@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./app/assets/css/styles.css">
+    <title>Memory game </title>
+</head>
+<body>
+    
+    <div class="content-center" id="content-center">
+        <p><strong>Bonjour utilisateur ! je suis heureuse de te voir sur ma page ! <br>
+            Avant de te lancer dans une aventure cérébrale voici quelques petits conseils pour t'aider dans ton parcours.</p>
+            <h1> Règle du jeu</h1>
+            <p>Le but est assez simple en fait, tu dois retrouver les paires cachés dans le deck et marquer le plus de point possible !
+            Pour gagner des points il faut assembler les bonnes cartes entres elles ce qui rapporte 5 points mais si tu te trompes tu en perds 2! <br>
+            Il y a 3 mode de jeux  cartes en tout donc 12 paires à trouver. 
+            Choisis le thème avec lequel tu veux jouer et lance toi!
+            <h2>Bonne chance !</h2>
+        </p>   
+         <ul class="new-game" id="new-game">
+        
+        <li><a href="#overlay" data-hover="Nouvelle Partie">Nouvelle Partie</a></li>
+    </ul>     
+    </div>
+
+    <div id="overlay" class="overlay">
+        <div class="popup">
+            <h3>
+            Choisissez votre thème
+            <span id="buttonClose" class="buttonClose">&times;</span>
+            </h3>
+            <div class="content-level">
+            <button class="level-btn">Easy</button>
+            <button class="level-btn">Medium </button>
+            <button class="level-btn">Hard</button>
+            </div>    
+        </div>
+    </div>  
+</body>
+</html>
+<script src="./app/assets/js/script.js"></script>
