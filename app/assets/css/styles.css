@@ -1,31 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-/*
-@font-face {
-    font-family: "Star Jedi";
-    src: url("../fonts/StarJedi-DGRW.ttf")format("truetype");
-}*/
 
 body {
     background-image: url(../../picture/background_homepage.png);
     background-size:100% ;
-    opacity: ;
 }
 
 .content-center {
     display: block;
     margin: auto;
     width: 50%;
-    margin-top: 8%;
-    
+    margin-top: 8%; 
 }
 
-    *{
-   /* font-family: 'Raleway', Arial, sans-serif;*/
-   font-family: 'Press Start 2P', cursive;
-    
-
+*{
+    /* font-family: 'Raleway', Arial, sans-serif;*/
+    font-family: 'Press Start 2P', cursive;
 }
+
 p {
     text-align: justify; 
     color: rgba(0, 0, 0, 0.938);
@@ -33,64 +25,64 @@ p {
 
 h1,h2 {
     text-align: center;
-   color: #1a0430b4 rgba(170, 145, 228, 0.959);
+    color: #1a0430b4 rgba(170, 145, 228, 0.959);
 }
 
 
 .new-game {
-  font-family: 'Raleway', Arial, sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin-top: 8%;
-  margin-right: 5%;
+    font-family: 'Raleway', Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 8%;
+    margin-right: 5%;
 }
 .new-game * {
-  box-sizing: border-box;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
 }
 .new-game li {
-  display: inline-block;
-  list-style: outside none none;
-  margin: 0 1.2em;
-  overflow: hidden;
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 1.2em;
+    overflow: hidden;
 }
 .new-game a {
-  padding: 0 0.5em 0 0.2em;
-  color: rgba(170, 145, 228, 0.959);
-  position: relative;
-  display: inline-block;
-  letter-spacing: 1px;
-  margin: 0;
-  text-decoration: none;
+    padding: 0 0.5em 0 0.2em;
+    color: rgba(170, 145, 228, 0.959);
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 0;
+    text-decoration: none;
 }
 .new-game a:before,
 .new-game a:after {
-  position: absolute;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
 }
 .new-game a:before {
-  right: 100%;
-  display: block;
-  width: 3px;
-  height: 100%;
-  content: "";
-  background-color: #5f29f3;
+    right: 100%;
+    display: block;
+    width: 3px;
+    height: 100%;
+    content: "";
+    background-color: #5f29f3;
 }
 .new-game a:after {
-  padding: 0 0.5em 0 0.2em;
-  position: absolute;
-  right: 100%;
-  top: 0;
-  content: attr(data-hover);
-  color: #c8c5d4;
-  white-space: nowrap;
+    padding: 0 0.5em 0 0.2em;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    content: attr(data-hover);
+    color: #c8c5d4;
+    white-space: nowrap;
 }
 .new-game li:hover a,
 .new-game .current a {
-  transform: translateX(100%);
+    transform: translateX(100%);
 }
 .button_Popup{
     display: block;
@@ -117,87 +109,87 @@ h1,h2 {
     right: 5% ;
     top: 18%;
     font-size: 1.3em;
- 
+    
 }
 
 .popup h3 {
-   
     padding-top: 10%;
-
-  
 }
+
 .content-level {
     margin-top: 12%;
 }
+
 #easy,#hard,#medium{
     width: 27%;
 }
+
 .level-btn {
- /* font-family: 'Raleway', Arial, sans-serif;*/
-  border: none;
-  background-color: #420cd8;
-  border-radius: 5px;
-  color: #ffffff;
-  cursor: pointer;
-  padding: 0px 30px;
-  display: inline-block;
-  margin: 15px 30px;
-  text-transform: uppercase;
-  line-height: 46px;
-  font-weight: 400;
-  font-size: 1em;
-  outline: none;
-  position: relative;
-  overflow: hidden;
-  font-size: 16px;
-  border-radius: 23px;
-  letter-spacing: 2px;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transform: translateZ(0);
+    /* font-family: 'Raleway', Arial, sans-serif;*/
+    border: none;
+    background-color: #420cd8;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0px 30px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    line-height: 46px;
+    font-weight: 400;
+    font-size: 1em;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    font-size: 16px;
+    border-radius: 23px;
+    letter-spacing: 2px;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: translateZ(0);
 }
 .level-btn:before {
-  opacity: 0;
-  content: "";
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  border-radius: inherit;
-  background-color: #1a0430b4;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-  
+    opacity: 0;
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-radius: inherit;
+    background-color: #1a0430b4;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+
 }
 .level-btn:after {
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  border: 3px solid #818bb3;
-  content: '';
-  border-radius: inherit;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border: 3px solid #818bb3;
+    content: '';
+    border-radius: inherit;
 
 }
 .level-btn:hover,
 .level-btn.hover {
-  background-color: #310094;
-  color: #ffffff;
-  transform: scale(1.20);
-  transition-duration: 400ms;
-  
+    background-color: #310094;
+    color: #ffffff;
+    transform: scale(1.20);
+    transition-duration: 400ms;
+
 }
 .level-btn:hover:before,
 .level-btn.hover:before {
-  -webkit-transform: translateX(0%);
-  transform: translateX(0%) ;
-  opacity: 0.25;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%) ;
+    opacity: 0.25;
 
 
 }
