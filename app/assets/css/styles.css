@@ -9,13 +9,15 @@
 body {
     background-image: url(../../picture/background_homepage.png);
     background-size:100% ;
+    opacity: ;
 }
 
 .content-center {
     display: block;
     margin: auto;
     width: 50%;
-    margin-top: 10%;
+    margin-top: 8%;
+    
 }
 
     *{
@@ -26,10 +28,12 @@ body {
 }
 p {
     text-align: justify; 
+    color: rgba(0, 0, 0, 0.938);
 }
 
 h1,h2 {
     text-align: center;
+   color: #1a0430b4 rgba(170, 145, 228, 0.959);
 }
 
 
@@ -126,7 +130,7 @@ h1,h2 {
     margin-top: 12%;
 }
 #easy,#hard,#medium{
-    width: 24%;
+    width: 27%;
 }
 .level-btn {
  /* font-family: 'Raleway', Arial, sans-serif;*/
