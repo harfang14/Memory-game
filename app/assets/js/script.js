@@ -1,20 +1,24 @@
-
-
-var button_Popup = document.getElementById('new-game');
 var overlay = document.getElementById('overlay');
-var regle_jeu = document.getElementById('content-center');
-button_Popup.addEventListener('click', popup);
+var rules = document.getElementById('content-center');
+var buttonClose = document.getElementById('buttonClose');
+var turnBack = document.getElementById('return')
+
+buttonClose.addEventListener('click', close);
+
 function popup(){
     overlay.style.display = 'block';
-    regle_jeu.style.display = 'none';
-
+    rules.style.display = 'none';
 }
 
-var buttonClose = document.getElementById('buttonClose');
-buttonClose.addEventListener('click', close);
 function close(){
     overlay.style.display = 'none';
-    regle_jeu.style.display = 'block';
+    rules.style.display = 'block';
+}
+
+function popupHard(){
+  hard.style.display = 'block';
+  overlay.style.display = 'none';
+  rules.style.display = 'none';
 }
 
 $(".hover").mouseleave(
