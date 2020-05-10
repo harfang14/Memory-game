@@ -10,7 +10,8 @@ body {
     display: block;
     margin: auto;
     width: 50%;
-    margin-top: 8%; 
+    margin-top: 8%;
+    background-color: #ffffff; 
 }
 
 *{
@@ -89,7 +90,7 @@ h1,h2 {
     margin: auto;
 }
 
-.overlay{
+.overlay , .hard {
     width: 50%;
     text-align: center;
     position: absolute;
@@ -97,19 +98,26 @@ h1,h2 {
     left: 25%;
     display: none;
 }
-.popup{
+
+
+.popup img {
+    width: 20%;
+    height: 250px;
+    margin: 5% 5%;
+}
+
+.popup {
     width: 100%;
     height: 500px;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 }
 
-.buttonClose{
+.buttonClose {
     cursor: pointer;
     position: absolute;
     right: 5% ;
     top: 18%;
     font-size: 1.3em;
-    
 }
 
 .popup h3 {
@@ -118,10 +126,6 @@ h1,h2 {
 
 .content-level {
     margin-top: 12%;
-}
-
-#easy,#hard,#medium{
-    width: 27%;
 }
 
 .level-btn {
@@ -149,6 +153,7 @@ h1,h2 {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-transform: translateZ(0);
+    width: 27%;
 }
 .level-btn:before {
     opacity: 0;
@@ -190,6 +195,6 @@ h1,h2 {
     -webkit-transform: translateX(0%);
     transform: translateX(0%) ;
     opacity: 0.25;
-
-
 }
+
+
