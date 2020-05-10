@@ -20,7 +20,7 @@
             <h2>Bonne chance !</h2>
         </p>   
 
-        <ul class="new-game" id="new-game">
+        <ul class="new-game" onclick="popup()">
         
             <li><a href="#overlay" data-hover="Nouvelle Partie">Nouvelle Partie</a></li>
         </ul>    
@@ -34,12 +34,23 @@
             </h3>
            
             <div class="content-level">
-                <button  class="level-btn" id="easy">Facile</button><br>
-                <button class="level-btn" id="medium" >Moyen</button><br>
-                <button class="level-btn"id="hard" >Difficile</button>
+                <button  class="level-btn" onclick="popupEasy()">Facile</button><br>
+                <button class="level-btn"  onclick="popupMedium()">Moyen</button><br>
+                <button class="level-btn"  onclick="popupHard()">Difficile</button>
             </div>    
         </div>
     </div>  
+    <div id="hard" class="hard">
+        <div class="popup">
+            <h3>Choisissez votre Deck
+                <span id="buttonClose" class="buttonClose">&times;</span>
+            </h3>
+
+                <img src="./app/picture/super_hero/dc/backSideDc.jpg" >
+                <img src="./app/picture/super_hero/marvel/pic0.png" alt="">                           
+        </div>
+    </div>  
+
 </body>
 </html>
 <script src="./app/assets/js/script.js"></script>
