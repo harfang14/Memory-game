@@ -2,6 +2,7 @@ var overlay = document.getElementById('overlay');
 var rules = document.getElementById('content-center');
 var buttonClose = document.getElementById('buttonClose');
 var turnBack = document.getElementById('return')
+var hard = document.getElementById('hard')
 
 buttonClose.addEventListener('click', close);
 
@@ -15,10 +16,21 @@ function close(){
     rules.style.display = 'block';
 }
 
-function popupHard(){
+function choiceLevel(choice){
+
+   if (choice.textContent == "Facile"){
+  facile.style.display = 'block';
+  overlay.style.display ='none'; 
+  }
+  else if (choice.textContent == "Moyen"){
+    medium.style.display = 'block';
+    overlay.style.display ='none'; 
+  }
+  else if (choice.textContent == "Difficile"){ 
   hard.style.display = 'block';
-  overlay.style.display = 'none';
-  rules.style.display = 'none';
+  overlay.style.display ='none'; 
+  
+ }
 }
 
 $(".hover").mouseleave(
@@ -26,4 +38,3 @@ $(".hover").mouseleave(
       $(this).removeClass("hover");
     }
   );
-   
