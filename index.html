@@ -10,14 +10,16 @@
     
     <div class="content-center" id="content-center">
         <p>
-            <strong>Bonjour utilisateur ! je suis heureuse de te voir sur ma page ! <br>
-            Avant de te lancer dans une aventure cérébrale voici quelques petits conseils pour t'aider dans ton parcours.</p>
-            <br><h1> Règle du jeu</h1>
-            <p>Le but est assez simple en fait, tu dois retrouver les paires cachés dans le deck et marquer le plus de point possible !
-            Pour gagner des points il faut assembler les bonnes cartes entres elles ce qui rapporte 5 points mais si tu te trompes tu en perds 2! <br>
-            Il y a 3 mode de jeux  cartes en tout donc 12 paires à trouver. 
+           
+            <br><h1><strong> Règle du jeu</h1>
+            <p>Le but du jeu est de regrouper par paire les cartes disposées face cachée sur le plateau.
+                Il y a 3 modes de jeu : <br> <br>
+                Facile: sur le thème de Harry Potter ! 8 paires à trouver. "Accio paria !" <br><br>
+                Moyen: sur le thème de Star Wars ! 12 paires à trouver possibilité de jouer contre le chrono et point négatif si tu te trompes ! "que la force soit avec toi ! "<br><br>
+                Difficile: Là il va te falloir des super pouvoirs! Sur le thème des Super héros. 16 paires à trouver, un chrono à battre, des points en moins si tu te trompes et les cartes restent visibles moins longtemps ! <br><br>
+
             Choisis le thème avec lequel tu veux jouer et lance toi!
-            <h2>Bonne chance !</h2>
+            <h2>Bonne chance !</h2></strong>
         </p>   
 
         <ul class="new-game" onclick="popup()">
@@ -33,21 +35,22 @@
                 <span id="buttonClose" class="buttonClose">&times;</span>
             </h3>
            
-            <div class="content-level">
-                <button  class="level-btn" onclick="popupEasy()">Facile</button><br>
-                <button class="level-btn"  onclick="popupMedium()">Moyen</button><br>
-                <button class="level-btn"  onclick="popupHard()">Difficile</button>
+            <div class="content-level" id="choice">
+                <button  class="level-btn" id = "popupEasy()">Facile</button><br>
+                <button class="level-btn" id = "popupMedium()">Moyen</button><br>
+               <button class="level-btn" onclick="choiceLevel(this)">Difficile</button> 
             </div>    
         </div>
     </div>  
+
     <div id="hard" class="hard">
         <div class="popup">
             <h3>Choisissez votre Deck
                 <span id="buttonClose" class="buttonClose">&times;</span>
             </h3>
 
-                <img src="./app/picture/super_hero/dc/backSideDc.jpg" >
-                <img src="./app/picture/super_hero/marvel/pic0.png" alt="">                           
+                <img src="./app/picture/backside/dc.jpg" >
+                <img src="./app/picture/backside/marvel.jpg" >                           
         </div>
     </div>  
 
