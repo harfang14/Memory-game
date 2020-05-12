@@ -1,8 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
-    background-image: url(../../picture/background_homepage.png);
+    background-image: url(../../picture/background.jpg);
     background-size:100% ;
 }
 
@@ -10,33 +9,34 @@ body {
     display: block;
     margin: auto;
     width: 50%;
-    margin-top: 8%;
-    background-color: #ffffff; 
+    margin-top: 5%;
+    background-color: #161515; 
+    opacity:0.8;
+    padding : 0 1% 1% 1%;
 }
 
-*{
-    /* font-family: 'Raleway', Arial, sans-serif;*/
-    font-family: 'Press Start 2P', cursive;
-}
+*{font-family: 'Press Start 2P', cursive;}
 
 p {
     text-align: justify; 
-    color: rgba(0, 0, 0, 0.938);
+    color: rgba(255, 255, 255, 0.938);
 }
 
 h1,h2 {
     text-align: center;
-    color: #1a0430b4 rgba(170, 145, 228, 0.959);
+    color: #905af3b4
+    
 }
-
+h3 {
+ color : rgba(170, 145, 228, 0.959);}
 
 .new-game {
-    font-family: 'Raleway', Arial, sans-serif;
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
     margin-top: 8%;
-    margin-right: 5%;
+    margin-right: 10%;
+ 
 }
 .new-game * {
     box-sizing: border-box;
@@ -51,7 +51,7 @@ h1,h2 {
 }
 .new-game a {
     padding: 0 0.5em 0 0.2em;
-    color: rgba(170, 145, 228, 0.959);
+    color: #f32121;
     position: relative;
     display: inline-block;
     letter-spacing: 1px;
@@ -70,7 +70,8 @@ h1,h2 {
     width: 3px;
     height: 100%;
     content: "";
-    background-color: #5f29f3;
+    background-color:  #f32121;
+
 }
 .new-game a:after {
     padding: 0 0.5em 0 0.2em;
@@ -78,7 +79,7 @@ h1,h2 {
     right: 100%;
     top: 0;
     content: attr(data-hover);
-    color: #c8c5d4;
+    color: #d15a5a;
     white-space: nowrap;
 }
 .new-game li:hover a,
@@ -97,8 +98,8 @@ h1,h2 {
     top: 10%;
     left: 25%;
     display: none;
+    
 }
-
 
 .popup img {
     width: 20%;
@@ -110,6 +111,7 @@ h1,h2 {
     width: 100%;
     height: 500px;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    
 }
 
 .buttonClose {
@@ -129,7 +131,7 @@ h1,h2 {
 }
 
 .level-btn {
-    /* font-family: 'Raleway', Arial, sans-serif;*/
+
     border: none;
     background-color: #420cd8;
     border-radius: 5px;
