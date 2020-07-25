@@ -7,18 +7,19 @@
     <title>Memory game </title>
 </head>
 <body>
-    
+  
+     
     <div class="content-center" id="content-center">
-        <p>
-           
+        <p>     
             <br><h1><strong> Règle du jeu</h1>
             <p>Le but du jeu est de regrouper par paire les cartes disposées face cachée sur le plateau.
                 Il y a 3 modes de jeu : <br> <br>
-                Facile: sur le thème de Harry Potter ! 8 paires à trouver. "Accio paria !" <br><br>
-                Moyen: sur le thème de Star Wars ! 12 paires à trouver possibilité de jouer contre le chrono et point négatif si tu te trompes ! "que la force soit avec toi ! "<br><br>
-                Difficile: Là il va te falloir des super pouvoirs! Sur le thème des Super héros. 16 paires à trouver, un chrono à battre, des points en moins si tu te trompes et les cartes restent visibles moins longtemps ! <br><br>
+                Facile: Sur le thème de Harry Potter ! 8 paires à trouver. "Accio paria !" <br><br>
+                Moyen: Sur le thème de Star Wars ! 12 paires à trouver possibilité de jouer contre le chrono et points négatifs si tu te trompes ! "que la force soit avec toi ! "<br><br>
+                Difficile: Là il va te falloir des super-pouvoirs! Sur le thème des Super-héros. 16 paires à trouver, un chrono à battre, des points en moins si tu te trompes et les cartes restent visibles moins longtemps ! <br><br>
 
-            Choisis le thème avec lequel tu veux jouer et lance toi!
+                Choisis le thème avec lequel tu veux jouer et lance toi!
+
             <h2>Bonne chance !</h2></strong>
         </p>   
 
@@ -36,24 +37,39 @@
             </h3>
            
             <div class="content-level" id="choice">
-                <button  class="level-btn" id = "popupEasy()">Facile</button><br>
-                <button class="level-btn" id = "popupMedium()">Moyen</button><br>
-               <button class="level-btn" onclick="choiceLevel(this)">Difficile</button> 
+                <button  class="level-btn" onclick="choiceLevel(this)">Facile</button><br>
+                <button class="level-btn" onclick="choiceLevel(this)">Moyen</button><br>
+                <button class="level-btn" onclick="choiceLevel(this)">Difficile</button> 
             </div>    
         </div>
     </div>  
 
-    <div id="hard" class="hard">
+    <div id="deckLevel" class="deckLevel">
         <div class="popup">
             <h3>Choisissez votre Deck
-                <span id="buttonClose" class="buttonClose">&times;</span>
+                <span id="return" class="buttonClose">&times;</span>
             </h3>
+            
+            <div id="hp" class="hp">
+                <a id ="wizard" href="./app/easygame.html"><img class="picture" src="./app/assets/picture/backside/wizzard.jpg"></a>
+                <a id ="death_easters" href="./app/easygame.html"><img class="picture" src="./app/assets/picture/backside/mangemort.jpg"></a>
+            </div>
 
-                <img src="./app/picture/backside/dc.jpg" >
-                <img src="./app/picture/backside/marvel.jpg" >                           
-        </div>
-    </div>  
+            <div id="sw" class="sw">
+                <a id="jedi" href="./app/mediumgame.html"><img class="picture" src="./app/assets/picture/backside/jedi.jpg"></a>
+                <a id="sith" href="./app/mediumgame.html"><img class="picture" src="./app/assets/picture/backside/sith.jpg"></a>
+            </div>
 
+            <div id="sh" class="sh">
+                <a id="dc" href="./app/hardgame.html"><img class="picture" src="./app/assets/picture/backside/dc.jpg"></a>
+                <a id="mv" href="./app/hardgame.html"><img class="picture" src="./app/assets/picture/backside/marvel.jpg"></a>
+            </div>
+               
+        </div> 
+    </div> 
+
+   
 </body>
 </html>
+
 <script src="./app/assets/js/script.js"></script>

@@ -1,18 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
-    background-image: url(../../picture/background.jpg);
+    background-image: url(../../assets/picture/background.jpg);
     background-size:100% ;
-}
-
-.content-center {
-    display: block;
-    margin: auto;
-    width: 50%;
-    margin-top: 5%;
-    background-color: #161515; 
-    opacity:0.8;
-    padding : 0 1% 1% 1%;
 }
 
 *{font-family: 'Press Start 2P', cursive;}
@@ -24,31 +14,42 @@ p {
 
 h1,h2 {
     text-align: center;
-    color: #905af3b4
-    
+    color: #905af3b4;
 }
-h3 {
- color : rgba(170, 145, 228, 0.959);}
+
+h3 { color : rgba(170, 145, 228, 0.959);}
+
+.content-center {
+    display: block;
+    margin: auto;
+    width: 50%;
+    margin-top: 5%;
+    background-color: #161515; 
+    opacity:0.8;
+    padding : 0 1% 1% 1%;
+}
 
 .new-game {
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
     margin-top: 8%;
-    margin-right: 10%;
- 
+    margin-right: 10%; 
 }
+
 .new-game * {
     box-sizing: border-box;
     -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;
 }
+
 .new-game li {
     display: inline-block;
     list-style: outside none none;
     margin: 0 1.2em;
     overflow: hidden;
 }
+
 .new-game a {
     padding: 0 0.5em 0 0.2em;
     color: #f32121;
@@ -58,12 +59,14 @@ h3 {
     margin: 0;
     text-decoration: none;
 }
+
 .new-game a:before,
 .new-game a:after {
     position: absolute;
     -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;
 }
+
 .new-game a:before {
     right: 100%;
     display: block;
@@ -71,8 +74,8 @@ h3 {
     height: 100%;
     content: "";
     background-color:  #f32121;
-
 }
+
 .new-game a:after {
     padding: 0 0.5em 0 0.2em;
     position: absolute;
@@ -82,25 +85,28 @@ h3 {
     color: #d15a5a;
     white-space: nowrap;
 }
+
 .new-game li:hover a,
 .new-game .current a {
     transform: translateX(100%);
 }
+
 .button_Popup{
     display: block;
     margin: auto;
 }
 
-.overlay , .hard {
+.overlay,.deckLevel {
     width: 50%;
     text-align: center;
     position: absolute;
     top: 10%;
     left: 25%;
-    display: none;
-    
+    display: none; 
 }
 
+.hp,.sw,.sh {display: none;}
+    
 .popup img {
     width: 20%;
     height: 250px;
@@ -110,8 +116,7 @@ h3 {
 .popup {
     width: 100%;
     height: 500px;
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-    
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3); 
 }
 
 .buttonClose {
@@ -122,16 +127,11 @@ h3 {
     font-size: 1.3em;
 }
 
-.popup h3 {
-    padding-top: 10%;
-}
-
-.content-level {
-    margin-top: 12%;
-}
-
+.popup h3 {padding-top: 10%;}
+   
+.content-level {margin-top: 12%;}
+    
 .level-btn {
-
     border: none;
     background-color: #420cd8;
     border-radius: 5px;
@@ -157,6 +157,7 @@ h3 {
     -webkit-transform: translateZ(0);
     width: 27%;
 }
+
 .level-btn:before {
     opacity: 0;
     content: "";
@@ -171,8 +172,8 @@ h3 {
     transition: all 0.3s;
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
-
 }
+
 .level-btn:after {
     position: absolute;
     top: 0px;
@@ -182,21 +183,78 @@ h3 {
     border: 3px solid #818bb3;
     content: '';
     border-radius: inherit;
-
 }
+
 .level-btn:hover,
 .level-btn.hover {
     background-color: #310094;
     color: #ffffff;
     transform: scale(1.20);
     transition-duration: 400ms;
-
 }
+
 .level-btn:hover:before,
 .level-btn.hover:before {
     -webkit-transform: translateX(0%);
     transform: translateX(0%) ;
     opacity: 0.25;
 }
+
+.hp_page{
+    background-image: url(../picture/background/wizardBackground.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.sw_page {
+    background-image: url(../picture/background/starwarsBackground.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.sh_page{
+    background-image: url(../picture/background/dcBackgorund.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.card_content_deck{
+    height: 650px; 
+    width: 540px; 
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    grid-gap: 3%;
+    margin: auto;
+    padding: 2%;
+}
+
+.card_content_deck img{ 
+    width: 100%;
+    height: 140px;
+    border:solid 2px;
+    object-fit: cover;     
+}
+.text_content p {
+    margin-top: 1%;
+    text-align: center;
+}
+
+#jedi, #sith{
+   
+    grid-template-columns: repeat(6, 120px);
+    /* background-color: aqua; */
+    width: 50%;
+    grid-gap: 1%;
+    padding: 1%; 
+}
+
+#dc, #marvel {
+    grid-template-columns: repeat(8, 120px);
+    /* background-color: aqua; */
+    width: 65%;
+    grid-gap: 1%;
+    padding: 1%; 
+}
+
 
 
