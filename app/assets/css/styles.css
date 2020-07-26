@@ -211,11 +211,11 @@ h3 { color : rgba(170, 145, 228, 0.959);}
     background-repeat: no-repeat;
 }
 
-.sh_page{
+/* .sh_page{
     background-image: url(../picture/background/dcBackgorund.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-}
+} */
 
 
 .card_content_deck{
@@ -239,6 +239,12 @@ h3 { color : rgba(170, 145, 228, 0.959);}
     text-align: center;
 }
 
+#wizzard{
+    grid-gap:1%;
+    padding: 1%;
+}
+
+  
 #jedi, #sith{
    
     grid-template-columns: repeat(6, 120px);
